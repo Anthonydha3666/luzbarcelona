@@ -23,3 +23,35 @@ const navSlide = () => {
 
 // Invoke function
 navSlide();
+
+// Cookie Consent Logic
+document.addEventListener('DOMContentLoaded', () => {
+    const cookieBanner = document.createElement('div');
+    cookieBanner.classList.add('cookie-banner');
+    cookieBanner.innerHTML = `
+        <div class="cookie-content">
+            <p>Utilizamos cookies propias y de terceros para mejorar nuestros servicios. Si continúa navegando, consideramos que acepta su uso. Puede obtener más información en nuestra <a href="cookies.html">Política de Cookies</a>.</p>
+        </div>
+        <button class="cookie-btn" id="accept-cookies">Aceptar</button>
+    `;
+
+    // Check if user already accepted cookies
+    if (!localStorage.getItem('cookiesAccepted')) {
+        document.body.appendChild(cookieBanner);
+        // Small delay for animation
+        setTimeout(() => {
+            cookieBanner.classList.add('show');
+        }, 100);
+    }
+
+    // Handle Accept Button
+    document.addEventListener('click', (e) => {
+        if (e.target && e.target.id === 'accept-cookies') {
+            localStorage.setItem('cookiesAccepted', 'true');
+            cookieBanner.classList.remove('show');
+            setTimeout(() => {
+                cookieBanner.remove();
+            }, 500);
+        }
+    });
+});
