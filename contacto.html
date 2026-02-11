@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Asociación Luz Barcelona</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-hands-holding-circle"></i>
+                <span>ASOCIACIÓN LUZ BARCELONA</span>
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="colabora.html">Colabora</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+                <div class="burger-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section small-hero">
+        <div class="hero-content">
+            <h1>Contacto</h1>
+            <p>Estamos aquí para escucharte</p>
+        </div>
+    </section>
+
+    <section class="section-padding container">
+        <div class="grid-2-col contact-grid">
+            <div class="contact-info">
+                <h2>Información de Contacto</h2>
+                <p>Si tienes alguna duda, necesitas orientación o quieres colaborar, no dudes en escribirnos o visitarnos.</p>
+                
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h4>Dirección</h4>
+                        <p>Avenida Pau Casals N.º 141,<br>L’Hospitalet de Llobregat, Barcelona</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>info@asociacionluzbarcelona.org</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h4>Teléfono</h4>
+                        <p>+34 123 456 789</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <h3>Envíanos un mensaje</h3>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Asunto</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Placeholder -->
+    <section class="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.666497237936!2d2.1064619!3d41.3629088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498d64bd023fd%3A0x26089f074b6c31a!2sAvinguda%20de%20Pau%20Casals%2C%20141%2C%2008901%20L&#39;Hospitalet%20de%20Llobregat%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1680000000000!5m2!1ses!2ses" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h4>ASOCIACIÓN LUZ BARCELONA</h4>
+                <p>Acompañando caminos, reconstruyendo vidas.</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Av. Pau Casals N.º 141, L’Hospitalet de Llobregat</p>
+                <p><i class="fa-solid fa-envelope"></i> info@asociacionluzbarcelona.org</p>
+                <p><i class="fa-solid fa-phone"></i> +34 123 456 789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Asociación Luz Barcelona. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
